@@ -9,83 +9,69 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen relative flex items-center justify-center overflow-hidden">
-      {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-primary/10 to-accent/10" />
-      
-      {/* 3D Scene */}
-      <div className="absolute right-0 top-0 w-1/2 h-full opacity-50">
-        <Scene3D />
-      </div>
-
-      {/* Floating orbs */}
-      <div className="absolute top-20 left-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-
-      <div className="container mx-auto px-4 z-10">
-        <div className="max-w-4xl">
+    <section id="home" className="min-h-screen relative flex items-center justify-center border-b border-border">
+      <div className="container mx-auto px-4 py-20 max-w-6xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
           >
-            <motion.h2 
-              className="text-lg md:text-xl text-muted-foreground mb-4 font-display"
+            <motion.div
+              className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Hi, I'm Parthraj Sinh Zala 👋
+              <span className="text-sm text-primary font-medium">Available for opportunities</span>
+            </motion.div>
+            
+            <motion.h2 
+              className="text-xl text-muted-foreground mb-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Hi, I'm Parthraj Sinh Zala
             </motion.h2>
             
             <motion.h1 
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 font-display leading-tight"
+              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <span className="text-gradient">Data Scientist</span> |{' '}
-              <span className="text-white">Designer</span> |{' '}
-              <span className="text-gradient">Developer</span>
+              Data Scientist,<br/>
+              Designer &<br/>
+              <span className="text-primary">Developer</span>
             </motion.h1>
 
             <motion.p 
-              className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl italic"
+              className="text-lg text-muted-foreground mb-8 max-w-xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.5 }}
             >
-              "Where data meets design, and logic meets creativity."
-            </motion.p>
-
-            <motion.p 
-              className="text-base md:text-lg text-foreground/80 mb-8 max-w-3xl leading-relaxed"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              I'm a Computer Science and Engineering student at PDEU with a <span className="text-primary font-semibold">9.20 CGPA</span>, 
-              passionate about two different yet connected worlds — Data Science and Design. 
-              I love exploring data to extract insights and building designs that make technology visually engaging and intuitive.
+              Computer Science student at PDEU with <span className="text-foreground font-semibold">9.20 CGPA</span>. 
+              Passionate about extracting insights from data and creating beautiful, intuitive designs.
             </motion.p>
 
             <motion.div 
-              className="flex flex-wrap gap-4 mb-12"
+              className="flex flex-wrap gap-4 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 }}
+              transition={{ delay: 0.6 }}
             >
               <Button 
                 size="lg" 
-                className="gradient-primary hover:opacity-90 transition-opacity text-white font-semibold"
                 onClick={() => scrollToSection('projects')}
               >
                 View My Work
               </Button>
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-primary/50 hover:bg-primary/10 backdrop-blur-sm"
+                variant="outline"
                 asChild
               >
                 <a href="#contact">
@@ -99,11 +85,11 @@ export const Hero = () => {
               className="flex gap-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 1.2 }}
+              transition={{ delay: 0.7 }}
             >
               <a 
                 href="mailto:parthrajsinhz88@gmail.com"
-                className="p-3 glass rounded-full hover:bg-primary/20 transition-colors"
+                className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -111,7 +97,7 @@ export const Hero = () => {
                 href="https://linkedin.com/in/parthrajsinh-zala"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 glass rounded-full hover:bg-primary/20 transition-colors"
+                className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -119,11 +105,23 @@ export const Hero = () => {
                 href="https://github.com/Parthraj2027"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 glass rounded-full hover:bg-primary/20 transition-colors"
+                className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
               >
                 <Github className="h-5 w-5" />
               </a>
             </motion.div>
+          </motion.div>
+
+          {/* Right Content - 3D Scene */}
+          <motion.div
+            className="hidden lg:block"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <div className="aspect-square rounded-2xl border border-border bg-card/50 overflow-hidden">
+              <Scene3D />
+            </div>
           </motion.div>
         </div>
       </div>

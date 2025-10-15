@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin, Github, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ContactForm } from './ContactForm';
 
 const contactInfo = [
   {
@@ -24,8 +25,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/parthrajsinh-zala',
-    href: 'https://linkedin.com/in/parthrajsinh-zala',
+    value: 'linkedin.com/in/parthrajsinh-zala-a0b39728a',
+    href: 'https://www.linkedin.com/in/parthrajsinh-zala-a0b39728a',
   },
   {
     icon: Github,
@@ -78,32 +79,38 @@ export const Contact = () => {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="border border-border bg-card p-8 rounded-lg"
-          >
-            <h3 className="text-2xl font-bold mb-6">
-              Goals & Vision
-            </h3>
-            <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-              My goal is to pursue a Master's in Computer Science focusing on AI and Data Science, 
-              while continuing to explore Design as a tool for storytelling and innovation.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              I want to build products that are <span className="text-foreground font-semibold">intelligent</span>, 
-              <span className="text-foreground font-semibold"> inclusive</span>, and 
-              <span className="text-foreground font-semibold"> visually engaging</span> — where every algorithm has meaning 
-              and every design has purpose.
-            </p>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="border border-border bg-card p-8 rounded-lg"
+            >
+              <h3 className="text-2xl font-bold mb-6">
+                Goals & Vision
+              </h3>
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                My goal is to pursue a Master's in Computer Science focusing on AI and Data Science, 
+                while continuing to explore Design as a tool for storytelling and innovation.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                I want to build products that are <span className="text-foreground font-semibold">intelligent</span>, 
+                <span className="text-foreground font-semibold"> inclusive</span>, and 
+                <span className="text-foreground font-semibold"> visually engaging</span> — where every algorithm has meaning 
+                and every design has purpose.
+              </p>
 
-            <Button size="lg">
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
-          </motion.div>
+              <Button size="lg" asChild>
+                <a href="/Parthraj_resume.pdf" download="Parthrajsinh_Zala_Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
+            </motion.div>
+
+            <ContactForm />
+          </div>
         </motion.div>
       </div>
     </section>

@@ -22,7 +22,7 @@ export const About = () => {
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm <span className="text-foreground font-semibold">Parthraj Sinh Zala</span>, a Computer Science and Engineering student at Pandit Deendayal Energy University (2023–2027).
+                I'm <span className="text-foreground font-semibold">Parthrajsinh Zala</span>, a Computer Science and Engineering student at Pandit Deendayal Energy University (2023–2027).
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 I bridge analytical problem-solving with aesthetic creativity — whether designing interfaces, automating systems, or training intelligent models.
@@ -71,7 +71,7 @@ export const About = () => {
             <div className="border border-border bg-card p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">🎯 Objective</h3>
               <p className="text-muted-foreground leading-relaxed">
-                As an aspiring Data Scientist and Designer, I aim to excel in two diverse yet complementary fields — harnessing data to extract meaningful insights, and using design to communicate ideas creatively and effectively.
+                As an aspiring data scientist and designer, I aim to excel in two diverse yet complementary fields — harnessing data to extract meaningful insights, and using design to communicate ideas creatively and effectively.
               </p>
             </div>
 

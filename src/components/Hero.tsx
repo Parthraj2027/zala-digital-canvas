@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Scene3D } from './Scene3D';
+import parthrajPhoto from '@/assets/parthraj-photo.jpg';
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -28,23 +29,22 @@ export const Hero = () => {
             </motion.div>
             
             <motion.h2 
-              className="text-xl text-muted-foreground mb-4"
+              className="text-lg text-muted-foreground mb-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Hi, I'm Parthraj Sinh Zala
+              Hi, I'm <span className="text-primary font-bold">Parthrajsinh Zala</span>
             </motion.h2>
             
             <motion.h1 
-              className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+              className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Data Scientist,<br/>
-              Designer &<br/>
-              <span className="text-primary">Developer</span>
+              Aspiring Data Scientist,<br/>
+              Designer & Developer
             </motion.h1>
 
             <motion.p 
@@ -74,7 +74,7 @@ export const Hero = () => {
                 variant="outline"
                 asChild
               >
-                <a href="#contact">
+                <a href="/Parthraj_resume.pdf" download="Parthrajsinh_Zala_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
@@ -94,7 +94,7 @@ export const Hero = () => {
                 <Mail className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkedin.com/in/parthrajsinh-zala"
+                href="https://www.linkedin.com/in/parthrajsinh-zala-a0b39728a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
@@ -112,15 +112,24 @@ export const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - 3D Scene */}
+          {/* Right Content - Profile Image */}
           <motion.div
             className="hidden lg:block"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="aspect-square rounded-2xl border border-border bg-card/50 overflow-hidden">
-              <Scene3D />
+            <div className="relative">
+              <div className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden bg-card/50">
+                <img 
+                  src={parthrajPhoto} 
+                  alt="Parthrajsinh Zala" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-border bg-card/50 overflow-hidden rounded-xl">
+                <Scene3D />
+              </div>
             </div>
           </motion.div>
         </div>

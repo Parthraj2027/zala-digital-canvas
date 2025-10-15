@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Scene3D } from './Scene3D';
 import parthrajPhoto from '@/assets/parthraj-photo.jpg';
 
 export const Hero = () => {
@@ -115,22 +114,21 @@ export const Hero = () => {
           {/* Right Content - Profile Image */}
           <motion.div
             className="hidden lg:block"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <div className="relative">
-              <div className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden bg-card/50">
-                <img 
-                  src={parthrajPhoto} 
-                  alt="Parthrajsinh Zala" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-border bg-card/50 overflow-hidden rounded-xl">
-                <Scene3D />
-              </div>
-            </div>
+            <motion.div 
+              className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden bg-card/50"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img 
+                src={parthrajPhoto} 
+                alt="Parthrajsinh Zala" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>

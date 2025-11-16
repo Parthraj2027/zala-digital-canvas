@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import parthrajPhoto from '@/assets/parthraj-photo.jpg';
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -33,7 +32,7 @@ export const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Hi, I'm <span className="text-primary font-bold">Parthrajsinh Zala</span>
+              Hi, I'm <span className="text-primary font-bold">Hemang Nahval</span>
             </motion.h2>
             
             <motion.h1 
@@ -73,7 +72,7 @@ export const Hero = () => {
                 variant="outline"
                 asChild
               >
-                <a href="/Parthraj_resume.pdf" download="Parthrajsinh_Zala_Resume.pdf">
+                <a href="/Parthraj_resume.pdf" download="Hemang_Nahval_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
@@ -87,13 +86,13 @@ export const Hero = () => {
               transition={{ delay: 0.7 }}
             >
               <a 
-                href="mailto:parthrajsinhz88@gmail.com"
+                href="mailto:hemangnv@example.com"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
               >
                 <Mail className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/parthrajsinh-zala-a0b39728a"
+                href="https://www.linkedin.com/in/hemang-nahval"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
@@ -101,7 +100,7 @@ export const Hero = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://github.com/Parthraj2027"
+                href="https://github.com/hemangnv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
@@ -119,15 +118,29 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <motion.div 
-              className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden bg-card/50"
+              className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden relative bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <img 
-                src={parthrajPhoto} 
-                alt="Parthrajsinh Zala" 
-                className="w-full h-full object-cover"
-              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <motion.div 
+                    className="text-8xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent"
+                    animate={{ 
+                      scale: [1, 1.05, 1],
+                    }}
+                    transition={{ 
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    HN
+                  </motion.div>
+                  <p className="text-muted-foreground mt-4 text-lg">Data • Design • Development</p>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
             </motion.div>
           </motion.div>
         </div>

@@ -22,7 +22,7 @@ export const About = () => {
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm <span className="text-foreground font-semibold">Parthrajsinh Zala</span>, a Computer Science and Engineering student at Pandit Deendayal Energy University (2023–2027).
+                I'm <span className="text-foreground font-semibold">Hemang Nahval</span>, a Computer Science and Engineering student at Pandit Deendayal Energy University (2023–2027).
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 I bridge analytical problem-solving with aesthetic creativity — whether designing interfaces, automating systems, or training intelligent models.

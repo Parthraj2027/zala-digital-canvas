@@ -7,8 +7,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'parthrajsinhz88@gmail.com',
-    href: 'mailto:parthrajsinhz88@gmail.com',
+    value: 'hemangnv@example.com',
+    href: 'mailto:hemangnv@example.com',
   },
   {
     icon: Phone,
@@ -25,14 +25,14 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/parthrajsinh-zala-a0b39728a',
-    href: 'https://www.linkedin.com/in/parthrajsinh-zala-a0b39728a',
+    value: 'linkedin.com/in/hemang-nahval',
+    href: 'https://www.linkedin.com/in/hemang-nahval',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/Parthraj2027',
-    href: 'https://github.com/Parthraj2027',
+    value: 'github.com/hemangnv',
+    href: 'https://github.com/hemangnv',
   },
 ];
 
@@ -102,7 +102,7 @@ export const Contact = () => {
               </p>
 
               <Button size="lg" asChild>
-                <a href="/Parthraj_resume.pdf" download="Parthrajsinh_Zala_Resume.pdf">
+                <a href="/Parthraj_resume.pdf" download="Hemang_Nahval_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>

@@ -32,7 +32,7 @@ export const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Hi, I'm <span className="text-primary font-bold">Hemang Nahval</span>
+              Hi, I'm <span className="text-primary font-bold">Hemang Navhal</span>
             </motion.h2>
             
             <motion.h1 
@@ -51,8 +51,8 @@ export const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              Computer Science student at PDEU with <span className="text-foreground font-semibold">9.20 CGPA</span>. 
-              Passionate about extracting insights from data and creating beautiful, intuitive designs.
+              Computer Science student at PDEU with <span className="text-foreground font-semibold">8.32 CGPA</span>. 
+              Passionate about Machine Learning and web development, with strong skills in data structures and algorithms.
             </motion.p>
 
             <motion.div 
@@ -72,7 +72,7 @@ export const Hero = () => {
                 variant="outline"
                 asChild
               >
-                <a href="/Parthraj_resume.pdf" download="Hemang_Nahval_Resume.pdf">
+                <a href="/Hemang_Navhal_Resume.pdf" download="Hemang_Navhal_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
@@ -86,13 +86,13 @@ export const Hero = () => {
               transition={{ delay: 0.7 }}
             >
               <a 
-                href="mailto:hemangnv@example.com"
+                href="mailto:navhalhemang1234@gmail.com"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
               >
                 <Mail className="h-5 w-5" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/hemang-nahval"
+                href="https://www.linkedin.com/in/hemang-navhal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"
@@ -100,7 +100,7 @@ export const Hero = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://github.com/hemangnv"
+                href="https://github.com/hemangnavhal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-border rounded-lg hover:bg-primary/10 hover:border-primary/50 transition-colors"

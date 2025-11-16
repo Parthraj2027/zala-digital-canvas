@@ -22,7 +22,7 @@ export const About = () => {
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm <span className="text-foreground font-semibold">Hemang Nahval</span>, a Computer Science and Engineering student at Pandit Deendayal Energy University (2023–2027).
+                I'm <span className="text-foreground font-semibold">Hemang Navhal</span>, a Computer Science and Engineering student at Pandit Deendayal Energy University (2023–2027).
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 I bridge analytical problem-solving with aesthetic creativity — whether designing interfaces, automating systems, or training intelligent models.
@@ -36,7 +36,7 @@ export const About = () => {
               <Card className="border-border bg-card">
                 <CardContent className="p-6">
                   <Code className="h-8 w-8 text-primary mb-3" />
-                  <h3 className="text-3xl font-bold mb-1">9.20</h3>
+                  <h3 className="text-3xl font-bold mb-1">8.32</h3>
                   <p className="text-sm text-muted-foreground">CGPA</p>
                 </CardContent>
               </Card>

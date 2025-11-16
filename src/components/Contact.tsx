@@ -7,14 +7,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hemangnv@example.com',
-    href: 'mailto:hemangnv@example.com',
+    value: 'navhalhemang1234@gmail.com',
+    href: 'mailto:navhalhemang1234@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 99748 72006',
-    href: 'tel:+919974872006',
+    value: '+91 6377593774',
+    href: 'tel:+916377593774',
   },
   {
     icon: MapPin,
@@ -25,14 +25,14 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/hemang-nahval',
-    href: 'https://www.linkedin.com/in/hemang-nahval',
+    value: 'linkedin.com/in/hemang-navhal',
+    href: 'https://www.linkedin.com/in/hemang-navhal',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/hemangnv',
-    href: 'https://github.com/hemangnv',
+    value: 'github.com/hemangnavhal',
+    href: 'https://github.com/hemangnavhal',
   },
 ];
 
@@ -102,7 +102,7 @@ export const Contact = () => {
               </p>
 
               <Button size="lg" asChild>
-                <a href="/Parthraj_resume.pdf" download="Hemang_Nahval_Resume.pdf">
+                <a href="/Hemang_Navhal_Resume.pdf" download="Hemang_Navhal_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>

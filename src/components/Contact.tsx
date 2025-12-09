@@ -25,8 +25,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/hemang-navhal',
-    href: 'https://www.linkedin.com/in/hemang-navhal',
+    value: 'linkedin.com/in/hemang-navhal-4983502a9',
+    href: 'https://www.linkedin.com/in/hemang-navhal-4983502a9/',
   },
   {
     icon: Github,

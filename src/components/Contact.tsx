@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Surendranagar, Gujarat, India',
+    value: 'Bikaner, Rajasthan, India',
     href: '#',
   },
   {

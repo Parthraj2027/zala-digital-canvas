@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import profilePhoto from '@/assets/profile-photo.jpg';
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -118,29 +119,16 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <motion.div 
-              className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden relative bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20"
-              whileHover={{ scale: 1.05 }}
+              className="aspect-square rounded-2xl border-2 border-primary/20 overflow-hidden relative"
+              whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <motion.div 
-                    className="text-8xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent"
-                    animate={{ 
-                      scale: [1, 1.05, 1],
-                    }}
-                    transition={{ 
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  >
-                    PZ
-                  </motion.div>
-                  <p className="text-muted-foreground mt-4 text-lg">Data • Design • Development</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+              <img 
+                src={profilePhoto} 
+                alt="Parthrajsinh Zala" 
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent"></div>
             </motion.div>
           </motion.div>
         </div>

@@ -23,7 +23,7 @@ const projects = [
     title: 'Surplus Saver – Food Recovery Platform',
     description: 'AI-powered surplus food marketplace designed to reduce retail food waste at scale while delivering savings and sustainability.',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'AI/ML'],
-    repo: 'https://github.com/Parthraj2027/Surplus-Saver',
+    repo: 'https://github.com/Parthraj2027/surplus-saver',
     fullDescription: 'An AI-powered surplus food marketplace designed to reduce retail food waste at scale while delivering savings and sustainability. 🌿 Built for the Walmart Sparkathon 2025 by Team ECO.dev\n\nSurplus Saver is an integrated platform to help Walmart (or any large retailer) manage surplus inventory approaching expiry dates. By applying AI-powered shelf-life predictions and dynamic discounts, it turns food waste into opportunity—for customers, the business, and the planet.\n\n✅ Reduces food waste at scale\n✅ Delivers savings to budget-conscious shoppers\n✅ Supports corporate ESG goals\n✅ Increases operational efficiency',
   },
   {
@@ -46,13 +46,6 @@ const projects = [
     tech: ['Python', 'NLP', 'NLTK'],
     repo: 'https://github.com/Parthraj2027/Text-Summarization-project',
     fullDescription: 'A Python-based text summarization project that processes input documents and generates concise summaries using natural language processing techniques. Suitable for automating content reduction and improving information accessibility.',
-  },
-  {
-    title: 'Ashray – Dog Adoption Platform',
-    description: 'User-friendly website connecting adopters with rescue organizations, integrating location and adoption filtering features.',
-    tech: ['HTML', 'CSS', 'Flask'],
-    repo: '#',
-    fullDescription: 'Created a user-friendly website connecting adopters with rescue organizations, integrating location and adoption filtering features to help find the perfect match for dog adoption.',
   },
 ];
 

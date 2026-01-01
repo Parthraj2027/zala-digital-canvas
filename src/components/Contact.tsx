@@ -25,8 +25,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/parthrajsinh-zala',
-    href: 'https://www.linkedin.com/in/parthrajsinh-zala',
+    value: 'linkedin.com/in/parthrajsinh-zala-a0b39728a',
+    href: 'https://www.linkedin.com/in/parthrajsinh-zala-a0b39728a/',
   },
   {
     icon: Github,

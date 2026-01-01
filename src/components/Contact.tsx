@@ -7,32 +7,32 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'navhalhemang1234@gmail.com',
-    href: 'mailto:navhalhemang1234@gmail.com',
+    value: 'parthrajsinhz88@gmail.com',
+    href: 'mailto:parthrajsinhz88@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 6377593774',
-    href: 'tel:+916377593774',
+    value: '+91 99748 72006',
+    href: 'tel:+919974872006',
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Bikaner, Rajasthan, India',
+    value: 'Surendranagar, Gujarat, India',
     href: '#',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/hemang-navhal-4983502a9',
-    href: 'https://www.linkedin.com/in/hemang-navhal-4983502a9/',
+    value: 'linkedin.com/in/parthrajsinh-zala',
+    href: 'https://www.linkedin.com/in/parthrajsinh-zala',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/hemangnavhal',
-    href: 'https://github.com/hemangnavhal',
+    value: 'github.com/Parthraj2027',
+    href: 'https://github.com/Parthraj2027',
   },
 ];
 
@@ -102,7 +102,7 @@ export const Contact = () => {
               </p>
 
               <Button size="lg" asChild>
-                <a href="/Hemang_Navhal_Resume.pdf" download="Hemang_Navhal_Resume.pdf">
+                <a href="/Parthrajsinh_Zala_Resume.pdf" download="Parthrajsinh_Zala_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
